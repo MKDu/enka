@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'HomePage.dart';
 
 class LogIn extends StatelessWidget {
   String _name;
@@ -173,6 +174,7 @@ class LogIn extends StatelessWidget {
                                               return null;
                                             }
                                             _formKey.currentState.save();
+                                            Navigator.push(context, MaterialPageRoute(builder: (context)=> HomePage()));
                                           })))
                             ]))))));
   }

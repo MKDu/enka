@@ -1,13 +1,18 @@
 import 'package:flutter/material.dart';
+import 'HomeScreen.dart';
+import 'DrawerScreen.dart';
 
-class HomePage extends StatefulWidget{
- _HomePage createState()=> _HomePage();
-}
-
-class _HomePage extends State<HomePage>{
+class HomePage extends StatelessWidget{
   @override
   Widget build(BuildContext context) {
     // TODO: implement build
-    return 
+    return Scaffold(
+      body: Stack(
+        children: <Widget> [
+          DrawerScreen(),
+          HomeScreen(),]
+
+      )
+    );
   }
 }
