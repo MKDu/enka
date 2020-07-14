@@ -74,18 +74,24 @@ class _HomeScreen extends State<HomeScreen> {
                               onPressed: () {})
                         ],
                         bottom: TabBar(indicatorColor: Color(0xFFFFC166), tabs: <Widget>[
-                          Text('Pick Up',
-                              style: TextStyle(
-                                  fontFamily: 'Montserrat',
-                                  fontWeight: FontWeight.w600,
-                                  fontSize: 18,
-                                  color: Color(0xFFE9A034))),
-                          Text('Pre Order',
-                              style: TextStyle(
-                                  fontFamily: 'Montserrat',
-                                  fontWeight: FontWeight.w600,
-                                  fontSize: 18,
-                                  color: Color(0xFFE9A034)))
+                          Padding(
+                            padding: const EdgeInsets.fromLTRB(0,0,0,10),
+                            child: Text('Pick Up',
+                                style: TextStyle(
+                                    fontFamily: 'Montserrat',
+                                    fontWeight: FontWeight.w600,
+                                    fontSize: 18,
+                                    color: Color(0xFFE9A034))),
+                          ),
+                          Padding(
+                            padding: const EdgeInsets.fromLTRB(0, 0, 0, 10),
+                            child: Text('Pre Order',
+                                style: TextStyle(
+                                    fontFamily: 'Montserrat',
+                                    fontWeight: FontWeight.w600,
+                                    fontSize: 18,
+                                    color: Color(0xFFE9A034))),
+                          )
                         ])),
                     body: TabBarView(
                     children: [

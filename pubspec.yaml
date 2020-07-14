@@ -24,6 +24,9 @@ dependencies:
   flutter:
     sdk: flutter
   flutter_launcher_icons: ^0.7.0
+  scrollable_positioned_list: ^0.1.6
+  flare_flutter: any
+
 
 flutter_icons:
   image_path: "assets/Logo.png"
